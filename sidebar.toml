@@ -1,0 +1,10 @@
+
+# herdr-autoname fills $topic1..$topic4 with each agent pane's session topic, left to right.
+[ui]
+sidebar_width = 34
+
+[ui.sidebar.spaces]
+rows = [["state_icon", "workspace"], ["$topic1"], ["$topic2"], ["$topic3"], ["$topic4"], ["branch", "git_status"]]
+
+[ui.sidebar.agents.rows_by_agent]
+claude = [["state_icon", "machine", "workspace", "tab"], ["terminal_title_stripped"]]

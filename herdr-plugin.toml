@@ -1,0 +1,19 @@
+id = "herdr-autoname"
+name = "herdr-autoname"
+version = "0.1.0"
+min_herdr_version = "0.9.5"
+description = "Show each agent pane's session topic under its space name"
+platforms = ["macos"]
+
+[[startup]]
+command = ["/usr/bin/python3", "-I", "herdr-autoname.py", "start"]
+
+[[actions]]
+id = "start"
+title = "Start or restart space topics"
+command = ["/usr/bin/python3", "-I", "herdr-autoname.py", "start"]
+
+[[actions]]
+id = "stop"
+title = "Stop space topics and clear them"
+command = ["/usr/bin/python3", "-I", "herdr-autoname.py", "stop"]
