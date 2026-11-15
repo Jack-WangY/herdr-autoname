@@ -29,6 +29,8 @@ Claude Code writes a short topic for each session into its terminal title, and h
    herdr plugin install Jack-WangY/herdr-autoname
    ```
 
+   herdr asks you to confirm a GitHub install. In a shell with no terminal input, such as a script or an agent's command runner, add `--yes` to confirm up front.
+
 2. Start the helper once. herdr runs the plugin's startup hook only when a server starts, not when you install it:
 
    ```sh
